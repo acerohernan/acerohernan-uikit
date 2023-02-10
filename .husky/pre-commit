@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+echo Linting the code... Seeing if the rules are followed 👷🏼‍♂️🔴
+yarn lint
+echo The code looks good! 👍
+
+echo Formating the code... Wait a second...
+yarn format
+echo Good job! You are able to commit your code! 👷🏼‍♂️🟢

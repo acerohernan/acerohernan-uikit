@@ -1,0 +1,3 @@
+{
+  "extends": ["@ape.swap/eslint-config-apeswap"]
+}
