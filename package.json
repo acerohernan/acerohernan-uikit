@@ -5,9 +5,10 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "scripts": {
+    "prepare": "npx husky install",
     "build": "rm -rf dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
-    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
